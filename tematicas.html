@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tematicas</title>
+        <!-- Icono que acompañará al title. También será el icono que se guardará a la hora de que hagan un marcador. Se recomienda un tamaño de 32x32 y en PNG	-->
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <!-- (Opcional: Solo Safari) Previsualización en marcadores -->
+        <!-- 180x180 -->
+        <link rel="apple-touch-icon" href="img/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/touch-icon-ipad-retina167.png">
+        <!-- Bloquea el zoom en smartphones-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!--Declara quien es el autor. Sin utilidad práctica -->
+        <meta name="author" content="Miguel Angel Villagrasa">
+        <!-- Declara la descripción de la web. Es utilizado por los motores de busqueda para la previa -->
+        <meta name="description" content="crea y comparte tu propia fiesta">
+        <!-- Normalizador normalize.css -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- Split media-->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css" media="all and (max-width: 600px)">
+        <link rel="stylesheet" type="text/css" href="css/desktop.css" media="all and (min-width: 600px)">
+        <!-- End Split media-->
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+        <!-- AlpineJS para gestionar el evento Clic -->
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <!-- A.O.S scroll logo -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <!--Contenido de la web-->
+    <body>
+        <header x-data="{ open: false }" class="header">
+            <div class="container">
+                <p>
+                    <a href="index.html">
+                    <img class="logo__desktop" src="img/blanco_grande.png" alt="logo social party">
+                    </a>
+                </p>
+                <div data-aos="fade-up">
+                    <a href="index.html">
+                        <p>
+                            <img class="logo__mobile" src="img/logo-blanco-solo.png" alt="logo social party">
+                        </p>
+                    </a>
+                </div>
+                <button class="header__button-nav--open" x-on:click="open = true">
+                    <img class="img-menu" src="img/abrir.webp" alt="abrir menu">
+                </button>
+                <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+                    <div class="nav__button" x-on:click="open = false">
+                        <button>
+                            <img class="img-menu" src="img/cerrar.webp" alt="cerrar menú">
+                        </button>
+                    </div>
+                    <ul class="nav__ul">
+                        <li><a href="index.html" class="nav__link">Home</a></li>
+                        <li><a href="tematicas.html" class="nav__link">Temáticas</a></li>
+                        <li><a href="Catalogo.html" class="nav__link">Catálogo</a></li>
+                        <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+                    </ul>
+                    <p>
+                        <img class="logo__mobile--menu" src="img/blanco_grande.png" alt="logo social party">
+                    </p>
+                </nav>
+            </div>
+        </header>
+        <main class="body">
+            <div class="container__main-catalogo">
+                <h1 class="title">Temáticas para tus Parties</h1>
+                <h3 class="title">
+                ¡Aquí te mostramos unas cuantas ideas para preparar tu Party!
+                </h3>
+                <section class="layout-tarjetas">
+                    <div class="tarjeta-1">
+                    <article class="container--tarjeta">
+                        <h2>
+                            Pool Party
+                        </h2>
+                        <p>
+                            <img class="img-tarjetas" src="img/pool.webp" alt="Amigos en la piscina riendo">
+                        </p>
+                        <p class="texto--tarjeta">
+                            Una “pool party” es un evento festivo organizado en una piscina. Los invitados pasarán un buen rato acompañado de música y unos buenos cocktails además de poder darse un buen chapuzón.
+                        </p>
+                        <div class="boton-tarjeta">
+                            <a class="texto-url" href="Catalogo.html">Ver Materiales</a>
+                        </div>
+                    </article>
+                    </div>
+                    <div class="tarjeta-2">
+                    <article class="container--tarjeta">
+                        <h2>
+                            Spooky Party
+                        </h2>
+                        <p>
+                            <img class="img-tarjetas" src="img/hallowen.webp" alt="jovenes alrededor de decoracion de halloween">
+                        </p>
+                        <p class="texto--tarjeta">
+                            La fiesta Spooky o comúnmente conocida como Halloween es una party en la que tus invitados disfrutaran de la forma más terrorífica, en ella puedes ofrecer desde talleres para preparar decoración hasta un concurso de disfraces.
+                        </p>
+                        <div class="boton-tarjeta">
+                            <a class="texto-url" href="Catalogo.html">Ver Materiales</a>
+                        </div>
+                    </article>
+                    </div>
+                    <div class="tarjeta-3">
+                    <article class="container--tarjeta">
+                        <h2>
+                            Masquerade
+                        </h2>
+                        <p>
+                            <img class="img-tarjetas" src="img/masquearde.webp" alt="Chicas con máscaras">
+                        </p>
+                        <p class="texto--tarjeta">
+                            La fiesta en la que todo el mundo oculta de manera sutil su identidad, representando las famosas fiestas Venecianas podrás sorprender a tus invitados ofreciendo las mascaras tú mismo.
+                        </p>
+                        <div class="boton-tarjeta">
+                            <a class="texto-url" href="Catalogo.html">Ver Materiales</a>
+                        </div>
+                    </article>
+                    </div>
+                    <div class="tarjeta-4">
+                    <article class="container--tarjeta">
+                        <h2>
+                            Silent Party
+                        </h2>
+                        <p>
+                            <img class="img-tarjetas" src="img/silent-party.webp" alt="Gente con auriculares bailando">
+                        </p>
+                        <p class="texto--tarjeta">
+                            La party perfecta para no molestar a tus vecinos, si no dispones de un lugar alejado de la ciudad, esta es una de las mejores opciones para hacer tu fiesta, cada uno escuchará la música a través de sus auriculares y no tendrás de que preocuparte.
+                        </p>
+                        <div class="boton-tarjeta">
+                            <a class="texto-url" href="Catalogo.html">Ver Materiales</a>
+                        </div>
+                    </article>
+                    </div>
+                    <div class="tarjeta-5">
+                    <article class="container--tarjeta">
+                        <h2>
+                            Hippie Party
+                        </h2>
+                        <p>
+                            <img class="img-tarjetas" src="img/hippie-party.webp" alt="Fiesta temática hippie">
+                        </p>
+                        <p class="texto--tarjeta">
+                                Ambienta esta party con la música más Hippie de la época, además cada participante deberá vestirse con sus prendas más disco: campanas, símbolos de paz y alguna que otra peluca.
+                        </p>
+                        <div class="boton-tarjeta">
+                            <a class="texto-url" href="Catalogo.html">Ver Materiales</a>
+                        </div>
+                    </article>
+                    </div>
+                    <div class="tarjeta-6">
+                    <article class="container--tarjeta">
+                        <h2>
+                            Karaoke
+                        </h2>
+                        <p>
+                            <img class="img-tarjetas" src="img/karaoke.webp" alt="Amigos con micrófonos cantando">
+                        </p>
+                        <p class="texto--tarjeta">
+                            Un Karaoke, una opción muy divertida para hacer que tus invitados lo pasen en grande a la vez que sacan su vena más artística, lo pasaréis genial.
+                        </p>
+                        <div class="boton-tarjeta">
+                            <a class="texto-url" href="Catalogo.html">Ver Materiales</a>
+                        </div>
+                    </article>
+                    </div>
+                    <div class="tarjeta-7">
+                    <article class="container--tarjeta">
+                        <h2>
+                            Neon Party
+                        </h2>
+                        <p>
+                            <img class="img-tarjetas" src="img/neon.webp" alt="Gente pintada con colores flúor  que brillan en la oscuridad">
+                        </p>
+                        <p class="texto--tarjeta">
+                           Compra unas Pinturas flúor y coloca unas luces ultravioleta y tendrás una magnífica sala de baile de lo más divertida en la que cada uno de tus invitados sorprenderá al resto con sus diseños de maquillaje.
+                        </p>
+                            <div class="boton-tarjeta">
+                                <a class="texto-url" href="Catalogo.html">Ver Materiales</a>
+                            </div>
+                    </article>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container__footer-desktop container__footer--mobile">
+                <p class="texto--footer"><img class="logo__footer" src="img/logo-footer.png" alt="logo social party "></p>
+                <div class="mail layout__mail">
+                    <p class="texto--footer contacta">Contacta:</p>
+                    <p class="correo"><a class="mail" href="mailto:info@socilpartyapp.com">info@socialpartyapp.com</a></p>
+                </div>
+                <ul class="lista--rrss layout__footer--rrss">
+                    <li class="texto-1">
+                        <P>RRSS:</P>
+                    </li>
+                    <li class="ig">
+                        <a href="https://www.instagram.com/socialparty_app/"><p><img class="icono--rrss" src="img/instagram-brands.svg" alt="icono Instagram"></p></a>
+                    </li>
+                    <li class="tw">
+                        <a href="https://twitter.com/socialparty_app">
+                            <p><img class="icono--rrss" src="img/redes-twitter.svg" alt="icono Twitter"></p></a>
+                    </li>
+                </ul>
+                <ul class="lista--rrss layout__footer--store">
+                    <li class="texto-2">
+                        <p>Descarga la APP:</p>
+                    </li>
+                    <li class="android">
+                        <a href="https://play.google.com/store/apps/details?id=com.socialparty.official"><p><img class="icono--rrss" src="img/android.svg" alt="icono Android"></p></a>
+                    </li>
+                    <li class="apple">
+                        <a class="icono--rrss--desktop" href="https://apps.apple.com/es/app/social-party/id1522840907">
+                            <p><img class="icono--rrss" src="img/apple.svg" alt="icono Apple"></p></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script>AOS.init();</script>
+    </body>
+</html>

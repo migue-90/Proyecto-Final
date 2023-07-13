@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <!-- Icono que acompañará al title. También será el icono que se guardará a la hora de que hagan un marcador. Se recomienda un tamaño de 32x32 y en PNG	-->
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <!-- (Opcional: Solo Safari) Previsualización en marcadores -->
+        <!-- 180x180 -->
+        <link rel="apple-touch-icon" href="img/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/touch-icon-ipad-retina167.png">
+        <!-- Bloquea el zoom en smartphones-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!--Declara quien es el autor. Sin utilidad práctica -->
+        <meta name="author" content="Miguel Angel Villagrasa">
+        <!-- Declara la descripción de la web. Es utilizado por los motores de busqueda para la previa -->
+        <meta name="description" content="crea y comparte tu propia fiesta">
+        <!-- Normalizador normalize.css -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- Split media-->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css" media="all and (max-width: 600px)">
+        <link rel="stylesheet" type="text/css" href="css/desktop.css" media="all and (min-width: 600px)">
+        <!-- End Split media-->
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+        <!-- AlpineJS para gestionar eventos Clic -->
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <!-- Script Cookies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <!--Contenido de la web-->
+    <body>
+        <header x-data="{ open: false }" class="header">
+            <div class="container">
+                <p>
+                    <a href="index.html">
+                    <img class="logo__desktop" src="img/blanco_grande.png" alt="logo social party">
+                    </a>
+                </p>
+                <div data-aos="fade-up">
+                    <a href="index.html">
+                        <p>
+                            <img class="logo__mobile" src="img/logo-blanco-solo.png" alt="logo social party">
+                        </p>
+                    </a>
+                </div>
+                <button class="header__button-nav--open" x-on:click="open = true">
+                    <img class="img-menu" src="img/abrir.webp" alt="abrir menu">
+                </button>
+                <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+                    <div class="nav__button" x-on:click="open = false">
+                        <button>
+                            <img class="img-menu" src="img/cerrar.webp" alt="cerrar menú">
+                        </button>
+                    </div>
+                    <ul class="nav__ul">
+                        <li><a href="index.html" class="nav__link">Home</a></li>
+                        <li><a href="tematicas.html" class="nav__link">Temáticas</a></li>
+                        <li><a href="catalogo.html" class="nav__link">Catálogo</a></li>
+                        <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+                    </ul>
+                    <p>
+                        <img class="logo__mobile--menu" src="img/blanco_grande.png" alt="logo social party">
+                    </p>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container__main container__main-mobile">
+                <h1 class="title title__home-social">Social Party</h1>
+                <div class="layout-home">
+                <p class="title title-home texto2-grid">Aquí tienes la guía definitiva para <strong>CREAR</strong> tu propia <strong>PARTY</strong>.</p>
+                    <div class="separador-home"></div>
+                <video autoplay muted loop playsinline class="video__home video__home-grid">
+                <source src="img/video-home.mp4" type="video/mp4">
+                </video>
+                <p class="title title-home texto3-grid">Además podrás compartirlas en <strong>SOCIAL PARTY APP</strong> y generar ingresos a la vez que te diviertes.</p>
+                </div>
+                <div class="arrows"></div>
+            </div>
+            <div class="main-store">
+                <section class="container__store--iconos--desktop">
+                    <div class="texto-store">
+                    <h2>DESCARGA LA APP</h2>
+                    <h2>¡ES GRATIS!</h2>
+                    </div>
+                    <div class="separador separador-desktop separador-desktop--3"></div>
+                    <a class="texto-url" href="https://play.google.com/store/apps/details?id=com.socialparty.official">
+                    <p><img class="zoom-store" src="img/android.svg" alt="icono Android"></p>
+                    <p><img src="img/flecha-blanca.svg" alt="flecha"> <span class="texto-url">Android</span></p>
+                    </a>
+                    <div class="separador separador-desktop--2"></div>
+                    <a class="texto-url" href="https://apps.apple.com/es/app/social-party/id1522840907">
+                    <p><img class="zoom-store" src="img/apple.svg" alt="icono Apple"></p>
+                    <p><img src="img/flecha-blanca.svg" alt="flecha"> <span>Apple</span></p>
+                    </a>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container__footer-desktop container__footer--mobile">
+                <p class="texto--footer"><img class="logo__footer" src="img/logo-footer.png" alt="logo social party "></p>
+                <div class="mail layout__mail">
+                    <p class="texto--footer contacta">Contacta:</p>
+                    <p class="correo"><a class="mail" href="mailto:info@socilpartyapp.com">info@socialpartyapp.com</a></p>
+                </div>
+                <ul class="lista--rrss layout__footer--rrss">
+                    <li class="texto-1">
+                        <P>RRSS:</P>
+                    </li>
+                    <li class="ig">
+                        <a href="https://www.instagram.com/socialparty_app/"><p><img class="icono--rrss" src="img/instagram-brands.svg" alt="icono Instagram"></p></a>
+                    </li>
+                    <li class="tw">
+                        <a href="https://twitter.com/socialparty_app">
+                            <p><img class="icono--rrss" src="img/redes-twitter.svg" alt="icono Twitter"></p></a>
+                    </li>
+                </ul>
+                <ul class="lista--rrss layout__footer--store">
+                    <li class="texto-2">
+                        <p>Descarga la APP:</p>
+                    </li>
+                    <li class="android">
+                        <a href="https://play.google.com/store/apps/details?id=com.socialparty.official"><p><img class="icono--rrss" src="img/android.svg" alt="icono Android"></p></a>
+                    </li>
+                    <li class="apple">
+                        <a class="icono--rrss--desktop" href="https://apps.apple.com/es/app/social-party/id1522840907">
+                            <p><img class="icono--rrss" src="img/apple.svg" alt="icono Apple"></p></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!--Script´s-->
+        <script>AOS.init();</script>
+        <div id="div-cookies" style="display: none;">
+            Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en
+            <a hreflang="es" href="cookies-viso-legal.html">Aviso Legal</a>
+            y la
+            <a hreflang="es" href="cookies-viso-legal.html">Política de Privacidad</a>.
+            <button type="button" class="btn btn-sm btn-primary" onclick="acceptCookies()">
+                Acepto el uso de cookies
+            </button>
+        </div>
+        <style>
+            #div-cookies {
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                width: 100%;
+                background-color: white;
+                box-shadow: 0px -5px 15px gray;
+                padding: 7px;
+                text-align: center;
+                z-index: 99;
+            }
+        </style>
+        <script>
+            function checkAcceptCookies() {
+                if (localStorage.acceptCookies == 'true') {
+                } else {
+                    $('#div-cookies').show();
+                }
+            }
+            function acceptCookies() {
+                localStorage.acceptCookies = 'true';
+                $('#div-cookies').hide();
+            }
+            $(document).ready(function() {
+                checkAcceptCookies();
+            });
+        </script>
+    </body>
+</html>

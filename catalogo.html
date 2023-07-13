@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <!-- Icono que acompañará al title. También será el icono que se guardará a la hora de que hagan un marcador. Se recomienda un tamaño de 32x32 y en PNG	-->
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <!-- (Opcional: Solo Safari) Previsualización en marcadores -->
+        <!-- 180x180 -->
+        <link rel="apple-touch-icon" href="img/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/touch-icon-ipad-retina167.png">
+        <!-- Bloquea el zoom en smartphones-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!--Declara quien es el autor. Sin utilidad práctica -->
+        <meta name="author" content="Miguel Angel Villagrasa">
+        <!-- Declara la descripción de la web. Es utilizado por los motores de busqueda para la previa -->
+        <meta name="description" content="crea y comparte tu propia fiesta">
+        <!-- Normalizador normalize.css -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- Split media-->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css" media="all and (max-width: 600px)">
+        <link rel="stylesheet" type="text/css" href="css/desktop.css" media="all and (min-width: 600px)">
+        <!-- End Split media-->
+        <!-- Star -->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <!-- End stars -->
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+        <!-- AlpineJS para gestionar el evento Clic -->
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+    <!--Contenido de la web-->
+    <body>
+        <header x-data="{ open: false }" class="header">
+            <div class="container">
+                <p>
+                    <a href="index.html">
+                        <img class="logo__desktop" src="img/blanco_grande.png" alt="logo social party">
+                    </a>
+                </p>
+                <div data-aos="fade-up">
+                    <a href="index.html">
+                        <p>
+                            <img class="logo__mobile" src="img/logo-blanco-solo.png" alt="logo social party">
+                        </p>
+                    </a>
+                </div>
+                <button class="header__button-nav--open" x-on:click="open = true">
+                    <img class="img-menu" src="img/abrir.webp" alt="abrir menu">
+                </button>
+                <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+                    <div class="nav__button" x-on:click="open = false">
+                        <button>
+                            <img class="img-menu" src="img/cerrar.webp" alt="cerrar menú">
+                        </button>
+                    </div>
+                    <ul class="nav__ul">
+                        <li><a href="index.html" class="nav__link">Home</a></li>
+                        <li><a href="tematicas.html" class="nav__link">Temáticas</a></li>
+                        <li><a href="catalogo.html" class="nav__link">Catálogo</a></li>
+                        <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+                    </ul>
+                    <p>
+                        <img class="logo__mobile--menu" src="img/blanco_grande.png" alt="logo social party">
+                    </p>
+                </nav>
+            </div>
+        </header>
+        <main class="body">
+            <div class="container__main-catalogo">
+                <h1 class="title">Catálogo</h1>
+                <h3 class="title">
+                   Consigue todo lo que necesitas para crear tu Party.
+                </h3>
+                <div class="carro-2"><a href="#"><img class="img-carrito" src="img/carrito.svg" alt="carro"></a></div>
+                <section class="layout-productos">
+                    <div class="producto-1">
+                         <article class="container--producto">
+                             <p>
+                                 <img class="imagen__producto" src="img/troncos-agua.webp" alt="amigos jugando en una piscina con hinchables con forma de tronco">
+                             </p>
+                             <p class="texto--producto">
+                                 Hinchables para jugar a derribarse
+                             </p>
+                             <div class="valoracion">
+
+                                 <!-- Estrella 1 -->
+                                 <button>
+                                     <i class="fas fa-star"></i>
+                                 </button>
+
+                                 <!-- Estrella 2 -->
+                                 <button>
+                                     <i class="fas fa-star"></i>
+                                 </button>
+
+                                 <!-- Estrella 3 -->
+                                 <button>
+                                     <i class="fas fa-star"></i>
+                                 </button>
+
+                                 <!-- Estrella 4 -->
+                                 <button>
+                                     <i class="fas fa-star"></i>
+                                 </button>
+
+                                 <!-- Estrella 5 -->
+                                 <button>
+                                     <i class="fas fa-star"></i>
+                                 </button>
+                             </div>
+                             <p> 20.95 €</p>
+                         </article>
+                    </div>
+                    <div class="producto-2">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/gafas-sol.webp" alt="Gafas de sol divertidas">
+                            </p>
+                            <p class="texto--producto">
+                                Gafas de sol divertidas para tu pool party
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 4.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-3">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/juego-colchoneta.webp" alt="Colchoneta con juego para beber integrado">
+                            </p>
+                            <p class="texto--producto">
+                                Colchoneta con juego para beber integrado
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 15.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-4">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/decoracion-pool.webp" alt="Decoración Hawaiana para pool party">
+                            </p>
+                            <p class="texto--producto">
+                                Decoración Hawaiana para pool party
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 13.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-5">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/decoracion-halloween.webp" alt="Decoración terrorífica">
+                            </p>
+                            <p class="texto--producto">
+                                Decoración terrorífica para spooky party
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 8.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-6">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/muñeco-halloween.webp" alt="Muñeco para tus fiestas de Halloween">
+                            </p>
+                            <p class="texto--producto">
+                                Muñeco para tus fiestas de Halloween
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 7.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-7">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/conejo.webp" alt="Máscara de conejo terrorífica">
+                            </p>
+                            <p class="texto--producto">
+                                Máscara de conejo terrorífica
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 11.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-8">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/calabazas.webp" alt="Decoración de calabazas halloween">
+                            </p>
+                            <p class="texto--producto">
+                                Decoración de calabazas halloween
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 9.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-9">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/pluma.webp" alt="Máscara veneciana con pluma">
+                            </p>
+                            <p class="texto--producto">
+                                Máscara Veneciana con pluma
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 13.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-10">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/mascara-japonesa.webp" alt="Máscara japonesa">
+                            </p>
+                            <p class="texto--producto">
+                                Máscara de animal Japonesa
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 14.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-11">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/mascara-veneciana-grande.webp" alt="Máscara Veneciana cara completa">
+                            </p>
+                            <p class="texto--producto">
+                                Máscara Veneciana cara completa
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 15.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-12">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/cascos.webp" alt="cascos para escuchas música">
+                            </p>
+                            <p class="texto--producto">
+                                Cascos para escuchas música
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 20.00 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-13">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/neon-party.webp" alt="luz neón para decorar">
+                            </p>
+                            <p class="texto--producto">
+                                Neón para decorar tu home party
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 9.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-14">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/neon-accesorios.webp" alt="Accesorios para una neón party">
+                            </p>
+                            <p class="texto--producto">
+                                Accesorios para una neón party
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 5.90 €</p>
+                        </article>
+                    </div>
+                    <div class="producto-15">
+                        <article class="container--producto">
+                            <p>
+                                <img class="imagen__producto" src="img/decoracion-hippie.webp" alt="Decoración hippie para tus amigos">
+                            </p>
+                            <p class="texto--producto">
+                                Decoración hippie para tus amigos
+                            </p>
+                            <div class="valoracion">
+
+                                <!-- Estrella 1 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 2 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 3 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 4 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+
+                                <!-- Estrella 5 -->
+                                <button>
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                            <p> 12.90 €</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container__footer-desktop container__footer--mobile">
+                <p class="texto--footer"><img class="logo__footer" src="img/logo-footer.png" alt="logo social party "></p>
+                <div class="mail layout__mail">
+                    <p class="texto--footer contacta">Contacta:</p>
+                    <p class="correo"><a class="mail" href="mailto:info@socilpartyapp.com">info@socialpartyapp.com</a></p>
+                </div>
+                <ul class="lista--rrss layout__footer--rrss">
+                    <li class="texto-1">
+                        <P>RRSS:</P>
+                    </li>
+                    <li class="ig">
+                        <a href="https://www.instagram.com/socialparty_app/"><p><img class="icono--rrss" src="img/instagram-brands.svg" alt="icono Instagram"></p></a>
+                    </li>
+                    <li class="tw">
+                        <a href="https://twitter.com/socialparty_app">
+                            <p><img class="icono--rrss" src="img/redes-twitter.svg" alt="icono Twitter"></p></a>
+                    </li>
+                </ul>
+                <ul class="lista--rrss layout__footer--store">
+                    <li class="texto-2">
+                        <p>Descarga la APP:</p>
+                    </li>
+                    <li class="android">
+                        <a href="https://play.google.com/store/apps/details?id=com.socialparty.official"><p><img class="icono--rrss" src="img/android.svg" alt="icono Android"></p></a>
+                    </li>
+                    <li class="apple">
+                        <a class="icono--rrss--desktop" href="https://apps.apple.com/es/app/social-party/id1522840907">
+                            <p><img class="icono--rrss" src="img/apple.svg" alt="icono Apple"></p></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script>AOS.init();</script>
+    </body>
+</html>

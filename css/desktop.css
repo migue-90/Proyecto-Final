@@ -1,0 +1,519 @@
+
+
+/*Header*/
+
+/*Header LOGOS*/
+
+.logo__desktop {
+    width: 9rem;
+}
+
+.logo__mobile--menu {
+    display: none;
+}
+
+.logo__mobile {
+    display: none;
+}
+
+/*Header MENÚ*/
+
+.nav__button {
+    display: none;
+}
+
+.header__button-nav--open {
+    display: none;
+}
+
+.nav__ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link {
+    display: flex;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
+
+.nav__link:hover {
+    color: white;
+    text-shadow: none;
+}
+
+/*Header CONTAINER*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+/*Fin Header*/
+
+/*Main home*/
+/*grid home*/
+.layout-home {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    gap: 1rem;
+    width: auto;
+    height: auto;
+    grid-template-areas:
+            "texto2 video"
+            "separador video"
+            "texto3 video"
+}
+
+.texto2-grid {
+    grid-area: texto2;
+}
+.texto3-grid {
+    grid-area: texto3;
+}
+.video__home-grid {
+    grid-area: video;
+}
+.separador-home {
+    grid-area: separador;
+}
+/*Fin grid home*/
+
+.container__main {
+    max-width: 800px;
+    margin-inline: auto;
+    padding: .5rem;
+}
+.video__home {
+    width: 100%;
+    display: block;
+
+}
+.title__home-social {
+    text-align: center;
+}
+
+.separador-home {
+    border-bottom: 1px solid black;
+    height: 1px;
+
+}
+.main-store {
+    display: flex;
+    padding: .6rem 0 .6rem 0;
+    align-items: center;
+    margin: 2rem 0;
+    color: white;
+    background: linear-gradient(90deg, #ed7542, #ed5142);
+}
+.container__store--iconos--desktop {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    justify-content: space-between;
+    margin: auto;
+    padding: .5rem;
+}
+.separador-desktop {
+    border: 1px solid white;
+    left: 15rem;
+    height: 110px;
+    position: start;
+}
+.separador-desktop--2 {
+    border: 1px solid white;
+    left: 15rem;
+    height: 110px;
+    position: start;
+}
+.zoom-store {
+    transition: transform .2s;
+}
+.zoom-store:hover {
+    transform: scale(1.5);
+}
+/*Fin Main home*/
+
+/*Main Temáticas*/
+
+.container--tarjeta {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    max-width: 17rem;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    background: antiquewhite;
+    border-radius: 10%;
+}
+.texto--tarjeta {
+    min-height: 12rem;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.boton-tarjeta {
+    background: #ed5142;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.img-tarjetas {
+    width: 60%;
+}
+.boton-tarjet:hover {
+    background: gray;
+}
+
+.layout-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 2rem;
+    margin: 4rem;
+    width: auto;
+    height: auto;
+    grid-template-areas:
+		"tarjeta-1 tarjeta-2"
+		"tarjeta-3 tarjeta-4"
+		"tarjeta-5 tarjeta-6"
+        "tarjeta-7 tarjeta-8"
+}
+.tarjeta-1 {
+    grid-area: tarjeta-1;
+}
+.tarjeta-2 {
+    grid-area: tarjeta-2;
+}
+.tarjeta-3 {
+    grid-area: tarjeta-3;
+}
+.tarjeta-4 {
+    grid-area: tarjeta-4;
+}
+.tarjeta-5 {
+    grid-area: tarjeta-5;
+}
+.tarjeta-6 {
+    grid-area: tarjeta-6;
+}
+.tarjeta-7 {
+    grid-area: tarjeta-7;
+}
+.tarjeta-8 {
+    grid-area: tarjeta-8;
+}
+
+/*Fin Main Temáticas*/
+
+/*Main Catálogo*/
+.img-carrito {
+    width: 2rem;
+}
+.carro-2 {
+    display: flex;
+    justify-content: end;
+    margin: 0 1.5rem .5rem 0;
+}
+.layout-productos {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+    width: auto;
+    height: auto;
+    grid-template-areas:
+            "producto-1 producto-2 producto-3 "
+            "producto-4 producto-5 producto-6"
+		    "producto-7 producto-8 producto-9"
+            "producto-10 producto-11 producto-12"
+            "producto-13 producto-14 producto-15"
+}
+.producto-1 {
+    grid-area: producto-1;
+}
+.producto-2 {
+    grid-area: producto-2;
+}
+.producto-3 {
+    grid-area: producto-3;
+}
+.producto-4 {
+    grid-area: producto-4;
+}
+.producto-5 {
+    grid-area: producto-5;
+}
+.producto-6 {
+    grid-area: producto-6;
+}
+.producto-7 {
+    grid-area: producto-7;
+}
+.producto-8 {
+    grid-area: producto-8;
+}
+.producto-9 {
+    grid-area: producto-9;
+}
+.producto-10 {
+    grid-area: producto-10;
+}
+.producto-11 {
+    grid-area: producto-11;
+}
+.producto-12 {
+    grid-area: producto-12;
+}
+.producto-13 {
+    grid-area: producto-13;
+}
+.producto-14 {
+    grid-area: producto-14;
+}
+.producto-15 {
+    grid-area: producto-15;
+}
+
+.container--producto {
+    display: block;
+    margin: 1rem;
+    width: auto;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+.container--producto:hover {
+    box-shadow: 2px 2px 9px 6px #d3d3d3d1;
+}
+
+.imagen__producto {
+    width: 70%;
+}
+
+.container__main-catalogo {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+.texto--producto {
+    margin: 1rem;
+}
+/*Estrellas*/
+
+:root {
+    --color-inactivo: #5f5050;
+    --color-hover: #ffa400;
+}
+.valoracion {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.valoracion button {
+    background-color: initial;
+    border: 0;
+    color: var(--color-inactivo);
+    transition: 1s all;
+}
+.valoracion button:hover {
+    cursor: pointer;
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(1):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(2):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(3):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(4):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+button:nth-child(5):hover ~ button {
+    color: var(--color-hover);
+    transform: rotate(360deg);
+}
+/*Fin Estrellas*/
+
+/*Fin Main Catálogo*/
+
+/*Main Contacto*/
+
+.layout-formulario {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    gap: 1rem;
+    width: auto;
+    height: auto;
+    grid-template-areas:
+            "nombre mensaje"
+            "email mensaje"
+            "telefono mensaje"
+            "campos campos"
+            "enviar enviar"
+}
+.nombre {
+    grid-area: nombre;
+}
+.email {
+    grid-area: email;
+}
+.telefono {
+    grid-area: telefono;
+}
+.mensaje {
+    grid-area: mensaje;
+}
+.enviar {
+    grid-area: enviar;
+}
+.campos{
+    grid-area: campos;
+}
+
+.texto--formulario {
+    margin-top: 3rem;
+
+}
+.formulario {
+    border-bottom: 1px solid #ed5142;
+    text-align: start;
+    width: 100%;
+}
+.box {
+    border: 0;
+    outline: none;
+    width: 100%;
+}
+.align {
+    text-align: start;
+}
+.campos-obligatorios {
+    text-align: start;
+    font-size: 0.8rem;
+}
+.text-area {
+    margin-top: 2rem;
+    border: 1px solid #ed5142;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+}
+.enviar {
+    margin-bottom: 2rem;
+}
+/*Fin Main Contacto*/
+
+
+/*Footer*/
+
+.container__footer-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 800px;
+}
+.lista--rrss {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    list-style: none;
+    color: #ed5142;
+}
+.icono--rrss {
+    width: 2rem;
+}
+.logo__footer {
+    justify-items: center;
+    width: 8rem;
+}
+.texto--footer {
+    text-decoration: none;
+    color: #ed5142;
+    text-align: center;
+}
+
+.mail {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.layout__mail {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: auto;
+    height: auto;
+    grid-template-areas:
+            "contacta"
+            "correo"
+}
+.contacta {
+    grid-area: contacta;
+    margin-bottom: 1.8rem;
+}
+.correo {
+    grid-area: correo;
+}
+
+.layout__footer--rrss {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    width: auto;
+    height: auto;
+    grid-template-areas:
+            "texto-1 texto-1"
+            "ig tw"
+}
+.texto-1 {
+    grid-area: texto-1;
+}
+.ig {
+    grid-area: ig;
+}
+.tw {
+    grid-area: tw;
+}
+
+.layout__footer--store {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    width: auto;
+    height: auto;
+    grid-template-areas:
+            "texto-2 texto-2"
+            "android apple"
+}
+.texto-2 {
+    grid-area: texto-2;
+}
+.android {
+    grid-area: android;
+}
+.apple {
+    grid-area: apple;
+}
+/*Fin Footer*/

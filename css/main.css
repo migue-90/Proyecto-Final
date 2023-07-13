@@ -1,0 +1,84 @@
+
+
+/*color
+rojo:#ED5142
+linear-gradient(90deg, #ed7542, #ed5142)
+ */
+
+/*fuente*/
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    height: 7rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #ed7542, #ed5142);
+    box-shadow: 0 0px 1rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/*Fin Header*/
+
+/*Main*/
+
+.title {
+    margin: 2rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.body {
+    background: white;
+    text-align: center;
+}
+
+.texto-url {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.texto-store {
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+}
+
+/*Fin Main*/
+
+/*cookies y legal*/
+
+.texto {
+    margin: 2rem;
+}
+.titulo-cookies {
+    text-decoration: none;
+    color: #ed5142;
+}
+
+/* Fin cookies y legal*/
+
+/*Footer*/
+
+.footer {
+    margin-top: 1rem;
+    background: #262627;
+    border-top: .4rem solid black;
+}
+
+/*Fin Footer*/
+
+/*favicon*/
